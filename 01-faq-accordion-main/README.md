@@ -21,7 +21,7 @@ En resumen, una sección de FAQ bien elaborada es una herramienta valiosa para c
 - CSS
 - JavaScript
 
-[Ver app🔗](https://)
+[Ver app🔗](https://seandsun.github.io/monorepo-zero-html-css-js/01-faq-accordion-main/)
 
 ![faq accordion img demo](./assets/images/faq-accordion-img.jpg)
 
