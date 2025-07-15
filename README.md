@@ -6,6 +6,6 @@ Monorepo para practicar HTML, CSS y JavaScript.
 
 ## Apps
 
-1. 
+1. [Acordeón de preguntas frecuentes](https://)
 
 <h3 align="center">< seandsun /></h3>

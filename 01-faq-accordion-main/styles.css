@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'WorkSans';
+  font-style: normal;
+  font-weight: 400 700;
+  src: url('./assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+:root {
+  --White: hsl(0, 100%, 100%);
+  --Purple-100: hsl(275, 100%, 97%);
+  --Purple-300: rgb(173, 54, 235);
+  --Purple-600: hsl(292, 16%, 49%);
+  --Purple-950: hsl(292, 42%, 14%);
+
+  --Font-WorkSans: 'WorkSans';
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--Font-WorkSans);
+  background-color: var(--Purple-100);
+  color: var(--Purple-950);
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  background-image: url('./assets/images/background-pattern-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.faq-accordion {
+  background-color: var(--White);
+  width: 327px;
+  padding: 24px;
+  border-radius: 8px;
+  .title-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 24px;
+    .star {
+      width: 20px;
+    }
+    .title {
+      font-size: 2rem;
+    }
+  }
+  .faq {
+    /* Cuando el "faq" tenga el atributo "open" en el HTML cambio el svg */
+    &[open] .icon-btn {
+      content: url('./assets/images/icon-minus.svg');
+    }
+    .question-container {
+      display: flex;
+      justify-content: space-between;
+      padding: 24px 0;
+      cursor: pointer;
+      &:hover {
+        color: var(--Purple-300);
+      }
+      .question {
+        font-weight: 600;
+        width: 220px;
+      }
+    }
+    .description {
+      color: var(--Purple-600);
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      margin-bottom: 20px;
+    }
+    &:not(:last-child) {
+      border-bottom: 2px solid var(--Purple-100);
+    }
+  }
+}
+
+@media screen and (width >= 620px) {
+  body {
+    background-image: url('./assets/images/background-pattern-desktop.svg');
+  }
+  .faq-accordion {
+    width: 600px;
+    padding: 40px;
+    .faq {
+      .question-container {
+        .question {
+          width: unset;
+          font-size: 1.125rem;
+        }
+      }
+    }
+  }
+}
