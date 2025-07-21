@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <title>Interactive rating component</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body
+    class="bg-Grey-950 text-White font-Overpass h-screen grid place-content-center"
+  >
+    <main>
+      <!-- Rating state start -->
+      <div
+        id="rating-start"
+        class="gradient-background max-w-[347px] rounded-2xl p-5 sm:max-w-[412px] sm:px-8 sm:py-10"
+      >
+        <div
+          class="bg-Grey-900 w-10 h-10 grid place-content-center rounded-full mb-4"
+        >
+          <img src="../assets/images/icon-star.svg" alt="icon star" />
+        </div>
+        <h2 class="text-2xl font-medium mb-2 sm:text-3xl">How did we do?</h2>
+        <p class="text-Grey-500 mb-6 text-[.9375rem] sm:text-base">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="flex justify-between mb-6">
+          <button class="circle"><span class="text-fix">1</span></button>
+          <button class="circle"><span class="text-fix">2</span></button>
+          <button class="circle"><span class="text-fix">3</span></button>
+          <button class="circle"><span class="text-fix">4</span></button>
+          <button class="circle"><span class="text-fix">5</span></button>
+        </div>
+        <button
+          id="submit-btn"
+          class="bg-Orange-500 w-full rounded-3xl h-11 uppercase text-Grey-950 font-bold text-sm tracking-widest cursor-pointer hover:bg-White"
+        >
+          <span class="text-fix">Submit</span>
+        </button>
+      </div>
+
+      <!-- Thank you state start -->
+      <div
+        id="rating-thank-you"
+        class="gradient-background max-w-[347px] rounded-2xl p-5 sm:max-w-[412px] sm:px-8 sm:py-10 hidden"
+      >
+        <div class="flex justify-center mb-6">
+          <img
+            class="w-[144px]"
+            src="../assets/images/illustration-thank-you.svg"
+            alt="illustration thank you"
+          />
+        </div>
+        <div class="flex justify-center mb-10">
+          <p class="bg-Grey-900 rounded-4xl w-fit px-5 py-2 text-Orange-500">
+            You selected <span id="score">4</span> out of 5
+          </p>
+        </div>
+        <h2 class="text-center text-2xl font-medium mb-2.5 sm:text-3xl">
+          Thank you!
+        </h2>
+        <p class="text-Grey-500 text-center text-[.9375rem] sm:text-[.96rem]">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>

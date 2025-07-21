@@ -1,0 +1,37 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400 700;
+  src: url('../assets/fonts/Overpass-VariableFont_wght.ttf') format('truetype');
+  font-display: swap;
+}
+
+@theme {
+  /* Primary */
+  --color-Orange-500: hsl(25, 97%, 53%);
+
+  /* Neutral */
+  --color-White: hsl(0, 100%, 100%);
+  --color-Grey-500: hsl(217, 12%, 63%);
+  --color-Grey-900: hsl(213, 19%, 18%);
+  --color-Grey-950: hsl(216, 12%, 8%);
+
+  --font-Overpass: 'Overpass';
+}
+@layer components {
+  .gradient-background {
+    background: radial-gradient(
+      99% 99% at 50% 0%,
+      hsl(215, 20%, 17%),
+      hsl(216, 24%, 12%) 100%
+    );
+  }
+  .circle {
+    @apply bg-Grey-900 text-Grey-500 w-10 h-10 rounded-full font-bold cursor-pointer hover:bg-Orange-500 hover:text-Grey-950;
+  }
+  .text-fix {
+    @apply translate-y-[1px] inline-block;
+  }
+}
