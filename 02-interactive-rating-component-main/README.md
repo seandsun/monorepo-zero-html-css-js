@@ -14,7 +14,7 @@ Un componente de calificación interactivo es importante porque permite:
 - CSS
 - JavaScript
 
-[Ver app🔗](https://)
+[Ver app🔗](https://seandsun.github.io/monorepo-zero-html-css-js/02-interactive-rating-component-main/dist/)
 
 ![interactive rating component img demo](./design/interactive-rating-component-img.jpg)
 
