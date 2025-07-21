@@ -11,7 +11,7 @@ Un componente de calificación interactivo es importante porque permite:
 ## Tecnologías usadas
 
 - HTML
-- CSS
+- Tailwind CSS
 - JavaScript
 
 [Ver app🔗](https://seandsun.github.io/monorepo-zero-html-css-js/02-interactive-rating-component-main/dist/)
