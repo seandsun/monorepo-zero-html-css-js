@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/images/favicon-32x32.png"
+    />
+    <title>Base Apparel coming soon page</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body class="font-Josefin-Sans text-Pink-400 background-gradient">
+    <main>
+      <section
+        class="h-[800px] lg:pt-[62px] lg:bg-[url('../assets/images/bg-pattern-desktop.svg')] xl:pl-[165px]"
+      >
+        <div class="lg:max-w-[412px] lg-mx-auto xl:max-w-[445px]">
+          <div class="font h-[84px] p-8 lg:mb-[86px] xl:p-0">
+            <img
+              class="w-[100px] lg:w-[140px]"
+              src="../assets/images/logo.svg"
+              alt="Logo Base Apparel"
+            />
+          </div>
+          <picture class="lg:absolute lg:top-0 lg:right-0">
+            <source
+              media="(max-width: 1023px)"
+              srcset="../assets/images/hero-mobile.jpg"
+            />
+            <source
+              media="(min-width: 1024px)"
+              srcset="../assets/images/hero-desktop.jpg"
+            />
+            <img
+              class="mb-12 w-full lg:mb-0 lg:w-auto"
+              src="../assets/images/hero-mobile.jpg"
+              alt="Hero image"
+            />
+          </picture>
+          <h1
+            class="text-[2.5rem] uppercase text-center font-light leading-10 tracking-[10px] max-w-64 mx-auto mb-4 lg:text-[3rem] lg:leading-16 lg:mb-8 lg:max-w-72 xl:m-0 xl:text-left xl:text-[4rem]"
+          >
+            We're <span class="text-Gray-900 font-normal">coming soon</span>
+          </h1>
+          <p
+            class="px-8 text-center text-sm mb-8 lg:text-base lg:mb-10 xl:px-0 xl:text-left"
+          >
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+          <form
+            id="form"
+            action=""
+            class="relative max-w-[311px] mx-auto rounded-full h-12 border lg:h-14 xl:max-w-full"
+          >
+            <input
+              class="outline-none rounded-full w-full h-full px-4"
+              type="text"
+              placeholder="Email Address"
+            />
+            <img
+              id="error-icon"
+              class="absolute right-[116px] top-3 invisible lg:top-3.5"
+              src="../assets/images/icon-error.svg"
+              alt="Icon error"
+            />
+            <p id="error-msg" class="text-Red-500 ml-4 mt-3 invisible">
+              Please provid a valid email
+            </p>
+            <button
+              class="absolute right-0 top-0 button-gradient button-shadow w-16 h-full rounded-full flex justify-center items-center cursor-pointer lg:w-24"
+              type="submit"
+            >
+              <img src="../assets/images/icon-arrow.svg" alt="Icon arrow" />
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
