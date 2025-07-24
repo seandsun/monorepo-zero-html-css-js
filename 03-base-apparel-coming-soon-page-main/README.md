@@ -18,7 +18,7 @@ En resumen, la landing page "We're coming soon" de Base Apparel es una estrategi
 - Tailwind CSS
 - JavaScript
 
-[Ver app🔗](https://)
+[Ver app🔗](https://seandsun.github.io/monorepo-zero-html-css-js/03-base-apparel-coming-soon-page-main/dist/)
 
 ![base apparel coming soon page img demo](./design/base-apparel-coming-soon-page-img.jpg)
 
