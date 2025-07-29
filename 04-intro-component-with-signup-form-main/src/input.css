@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/Poppins/Poppins-Medium.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/Poppins/Poppins-SemiBold.ttf') format('truetype');
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+  font-display: swap;
+}
+@theme {
+  /* Primary */
+  --color-Red-400: hsl(0, 100%, 74%);
+  --color-Green-400: hsl(154, 59%, 51%);
+  --color-Shadow-Green: hsl(153, 57%, 46%);
+  /* Accent */
+  --color-Purple-700: hsl(248, 32%, 49%);
+  /* Neutral */
+  --color-Gray-900: hsl(249, 10%, 26%);
+  --color-Purple-350: hsl(246, 25%, 77%);
+  --font-Poppins: 'Poppins';
+}
+@layer components {
+  .input {
+    @apply border border-Purple-350 rounded-[5px] text-sm font-semibold p-4 w-full outline-none;
+  }
+}
